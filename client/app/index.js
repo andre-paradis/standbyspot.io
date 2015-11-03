@@ -2,7 +2,9 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute } from 'react-router';
 
+require("jquery");
 require("bootstrap-webpack");
+require("./theme");
 
 
 import { App, About, Inbox } from './test';

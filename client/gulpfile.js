@@ -11,9 +11,14 @@ gulp.task("default", ["static", "webpack-dev-server"]);
 
 gulp.task('static', function () {
   gutil.log("copying html files to dist");
-  return gulp
+  gulp
     .src('app/**/*.html')
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist'));
+
+  gulp
+    .src('app/**/*.css')
+    .pipe(gulp.dest('dist'));
+
 })
 
 // Production build
